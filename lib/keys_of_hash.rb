@@ -1,7 +1,6 @@
 class Hash
   def keys_of(arguments)
-    arguments.each do |x|
-      
+    map {|key, value| arguments.include?(value) ? key : nil}.compact
     # code goes here
   end
 end
